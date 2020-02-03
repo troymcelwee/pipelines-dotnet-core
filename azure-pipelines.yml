@@ -19,5 +19,7 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'DevOps Svc'
+    appType: 'webApp'
     appName: 'devops-tmcel1118'
-    package: $(System.ArtifactsDirectory)/**/*.zip
+    package: '$(System.ArtifactsDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
