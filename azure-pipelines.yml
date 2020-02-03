@@ -18,6 +18,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<Azure service connection>'
-    appName: '<Name of web app>'
+    azureSubscription: 'DevOps Svc'
+    appName: 'devops-tmcel1118'
     package: $(System.ArtifactsDirectory)/**/*.zip
