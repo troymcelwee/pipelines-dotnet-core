@@ -6,6 +6,8 @@
 trigger:
 - master
 
+pool: 'Container Pipelines'
+
 variables:
   buildConfiguration: 'Release'
 
