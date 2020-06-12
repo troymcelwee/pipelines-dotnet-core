@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'Container Pipelines'
 
 variables:
   buildConfiguration: 'Release'
