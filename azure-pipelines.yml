@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'Container Pipelines'
 
 variables:
   buildConfiguration: 'Release'
@@ -23,7 +23,8 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
 
-- task: PublishBuildArtifacts@1
+- task: PublishPipelineArtifact@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'devops-tmcel1118'
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'devops-tmcel1118'
+    publishLocation: 'pipeline'
