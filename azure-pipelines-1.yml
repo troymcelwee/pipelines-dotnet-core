@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'azd-ubuntu1804-pwsh6.2.0'
 
 variables:
   buildConfiguration: 'Release'
