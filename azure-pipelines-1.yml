@@ -6,9 +6,6 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'azd-ubuntu1804-pwsh6.2.0'
-
 variables:
   buildConfiguration: 'Release'
 
